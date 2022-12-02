@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Excellerent.Standard.Advanced.Client.Infrastructure/1.0.0": {
+        "runtime": {
+          "Excellerent.Standard.Advanced.Client.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Excellerent.Standard.Advanced.Client.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
