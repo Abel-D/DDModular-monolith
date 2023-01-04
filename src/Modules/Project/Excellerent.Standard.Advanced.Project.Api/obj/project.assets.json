@@ -2908,6 +2908,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Excellerent.Standard.Advanced.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Excellerent.Standard.Advanced.Project.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excellerent.Standard.Advanced.Project.Core.dll": {}
+        }
+      },
       "Excellerent.Standard.Advanced.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -8744,6 +8757,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
+      "type": "project",
+      "path": "../Excellerent.Standard.Advanced.Project.Core/Excellerent.Standard.Advanced.Project.Core.csproj",
+      "msbuildProject": "../Excellerent.Standard.Advanced.Project.Core/Excellerent.Standard.Advanced.Project.Core.csproj"
+    },
     "Excellerent.Standard.Advanced.Shared/1.0.0": {
       "type": "project",
       "path": "../../../Excellerent.Standard.Advanced.Shared/Excellerent.Standard.Advanced.Shared.csproj",
@@ -8752,6 +8770,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Excellerent.Standard.Advanced.Project.Core >= 1.0.0",
       "Excellerent.Standard.Advanced.Shared >= 1.0.0"
     ]
   },
@@ -8784,6 +8803,9 @@
           "projectReferences": {
             "D:\\projects\\Excellerent.Standard.Advanced\\src\\Excellerent.Standard.Advanced.Shared\\Excellerent.Standard.Advanced.Shared.csproj": {
               "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Excellerent.Standard.Advanced.Shared\\Excellerent.Standard.Advanced.Shared.csproj"
+            },
+            "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Project\\Excellerent.Standard.Advanced.Project.Core\\Excellerent.Standard.Advanced.Project.Core.csproj": {
+              "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Project\\Excellerent.Standard.Advanced.Project.Core\\Excellerent.Standard.Advanced.Project.Core.csproj"
             }
           }
         }

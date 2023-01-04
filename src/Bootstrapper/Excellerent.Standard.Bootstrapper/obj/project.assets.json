@@ -3055,6 +3055,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Excellerent.Standard.Advanced.Project.Core": "1.0.0",
           "Excellerent.Standard.Advanced.Shared": "1.0.0"
         },
         "compile": {
@@ -3062,6 +3063,19 @@
         },
         "runtime": {
           "bin/placeholder/Excellerent.Standard.Advanced.Project.Api.dll": {}
+        }
+      },
+      "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Excellerent.Standard.Advanced.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Excellerent.Standard.Advanced.Project.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excellerent.Standard.Advanced.Project.Core.dll": {}
         }
       },
       "Excellerent.Standard.Advanced.Shared/1.0.0": {
@@ -9049,6 +9063,11 @@
       "type": "project",
       "path": "../../Modules/Project/Excellerent.Standard.Advanced.Project.Api/Excellerent.Standard.Advanced.Project.Api.csproj",
       "msbuildProject": "../../Modules/Project/Excellerent.Standard.Advanced.Project.Api/Excellerent.Standard.Advanced.Project.Api.csproj"
+    },
+    "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Project/Excellerent.Standard.Advanced.Project.Core/Excellerent.Standard.Advanced.Project.Core.csproj",
+      "msbuildProject": "../../Modules/Project/Excellerent.Standard.Advanced.Project.Core/Excellerent.Standard.Advanced.Project.Core.csproj"
     },
     "Excellerent.Standard.Advanced.Shared/1.0.0": {
       "type": "project",
