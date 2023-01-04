@@ -1,4 +1,6 @@
 ﻿using Excellerent.Standard.Advanced.Shared.DTO;
+using Excellerent.Standard.Advanced.Shared.Entity;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +9,13 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
-    internal class AddClientRequest : Request<Client>
+    public class AddClientRequest : IRequest<Response<Guid>>
     {
-        public AddClientRequest(Client t) : base(t)
+        public ClientEntity Client { get; set; }
+        public AddClientRequest(string name, string description) 
         {
+            Client.Name=name;
+            Client.Description = description;
         }
     }
 }

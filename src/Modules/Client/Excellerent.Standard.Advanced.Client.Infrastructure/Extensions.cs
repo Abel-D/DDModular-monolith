@@ -16,7 +16,7 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
     {
         public static IServiceCollection AddClientInfrastructureServices(this IServiceCollection services)
         {
-            services.AddDbContext<BaseContext>(options => options.UseNpgsql("User ID=postgres;Password=Password;Server=localhost;Port=5432;Databasennk=Client;Pooling=true;"));
+            services.AddDbContext<ClientContext>(options => options.UseNpgsql("User ID=postgres;Password=Password;Server=localhost;Port=5432;Databasennk=Client;Pooling=true;"));
             services.AddScoped<IClientRepository, ClientRepository>();
             return services;
         }

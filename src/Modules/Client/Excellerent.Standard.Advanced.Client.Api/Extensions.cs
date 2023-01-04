@@ -16,8 +16,8 @@ namespace Excellerent.Standard.Advanced.Client.Api
     {
         public static IServiceCollection AddClientModule(this IServiceCollection services)
         {
-            services.AddClientCoreServices();
             services.AddClientInfrastructureServices();
+            services.AddClientCoreServices();
             services.AddClientSharedServices();
 
             return services;

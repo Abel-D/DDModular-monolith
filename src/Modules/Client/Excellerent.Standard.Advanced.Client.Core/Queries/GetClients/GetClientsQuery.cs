@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {
-    internal class GetClientsQuery:IRequest<Response<PagedList<Client>>>
+    public record GetClientsQuery:IRequest<Response<PagedList<Client>>>
     {
         public GetClientsRequest request { get; set; }
         public GetClientsQuery(GetClientsRequest getClientsRequest)
