@@ -1692,10 +1692,19 @@
       },
       "Excellerent.Standard.Advanced.Project.Api/1.0.0": {
         "dependencies": {
+          "Excellerent.Standard.Advanced.Project.Core": "1.0.0",
           "Excellerent.Standard.Advanced.Shared": "1.0.0"
         },
         "runtime": {
           "Excellerent.Standard.Advanced.Project.Api.dll": {}
+        }
+      },
+      "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
+        "dependencies": {
+          "Excellerent.Standard.Advanced.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Excellerent.Standard.Advanced.Project.Core.dll": {}
         }
       },
       "Excellerent.Standard.Advanced.Shared/1.0.0": {
@@ -2916,6 +2925,11 @@
       "sha512": ""
     },
     "Excellerent.Standard.Advanced.Project.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Excellerent.Standard.Advanced.Project.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

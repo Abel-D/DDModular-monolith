@@ -85,3 +85,5 @@ D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.
 D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.Bootstrapper\bin\Debug\net6.0\Excellerent.Standard.Advanced.Client.Core.pdb
 D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.Bootstrapper\bin\Debug\net6.0\Excellerent.Standard.Advanced.Client.Infrastructure.pdb
 D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.Bootstrapper\bin\Debug\net6.0\Excellerent.Standard.Advanced.Client.Shared.pdb
+D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.Bootstrapper\bin\Debug\net6.0\Excellerent.Standard.Advanced.Project.Core.dll
+D:\projects\Excellerent.Standard.Advanced\src\Bootstrapper\Excellerent.Standard.Bootstrapper\bin\Debug\net6.0\Excellerent.Standard.Advanced.Project.Core.pdb

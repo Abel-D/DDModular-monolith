@@ -15,3 +15,5 @@ D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standa
 D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\bin\Debug\net6.0\Excellerent.Standard.Advanced.Shared.pdb
 D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\obj\Debug\net6.0\Excellerent.Standard.Advanced.Project.Api.csproj.CopyComplete
 D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\obj\Debug\net6.0\Excellerent.Standard.Advanced.Project.Api.genruntimeconfig.cache
+D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\bin\Debug\net6.0\Excellerent.Standard.Advanced.Project.Core.dll
+D:\projects\Excellerent.Standard.Advanced\src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\bin\Debug\net6.0\Excellerent.Standard.Advanced.Project.Core.pdb
