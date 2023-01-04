@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
+    <ProjectReference Include="..\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
+    <ProjectReference Include="..\Excellerent.Standard.Advanced.Client.Infrastructure\Excellerent.Standard.Advanced.Client.Infrastructure.csproj" />
+    <ProjectReference Include="..\Excellerent.Standard.Advanced.Client.Shared\Excellerent.Standard.Advanced.Client.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "vNpfiOpNJ09Og+E9iDXaGaZCuTIzDw/imyylnVAX9TxqSAkIxOxsF3ke7WT4KmVzIPYDiHkDdReQf0Tm2rIU5w==",
+=======
+  "dgSpecHash": "lfq0U2OvSM3xqms3XATQ2CRycQZUe0dwS6asKCAdo4IoPLFrPiG/wvE6bSA6N+4ddb7hiU9RZR2Sgb88Cyn07Q==",
+>>>>>>> new-implementation
   "success": true,
   "projectFilePath": "D:\\projects\\Excellerent.Standard.Advanced\\host\\Excellerent.Standard.Advanced.WebHost\\Excellerent.Standard.Advanced.WebHost.csproj",
   "expectedPackageFiles": [
