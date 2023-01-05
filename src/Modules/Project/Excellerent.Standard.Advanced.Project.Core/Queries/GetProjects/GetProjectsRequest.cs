@@ -1,4 +1,6 @@
-﻿using Excellerent.Standard.Advanced.Shared.Helpers;
+﻿using Excellerent.Standard.Advanced.Shared.DTO;
+using Excellerent.Standard.Advanced.Shared.Helpers;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
 {
-    public record GetProjectsRequest
+    public record GetProjectsRequest:IRequest<Response<IEnumerable<Project>>>
     {
         public PaginationParameters PaginationParameters { get; set; }
         public GetProjectsRequest(PaginationParameters pagination)
