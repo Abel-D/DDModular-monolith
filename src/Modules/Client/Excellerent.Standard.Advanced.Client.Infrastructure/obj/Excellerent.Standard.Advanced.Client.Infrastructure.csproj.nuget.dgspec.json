@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Excellerent.Standard.Advanced.Shared\\Excellerent.Standard.Advanced.Shared.csproj",
         "projectName": "Excellerent.Standard.Advanced.Shared",
         "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Excellerent.Standard.Advanced.Shared\\Excellerent.Standard.Advanced.Shared.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Excellerent.Standard.Advanced.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -125,11 +125,11 @@
         "projectUniqueName": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Core\\Excellerent.Standard.Advanced.Client.Core.csproj",
         "projectName": "Excellerent.Standard.Advanced.Client.Core",
         "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Core\\Excellerent.Standard.Advanced.Client.Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,11 +184,11 @@
         "projectUniqueName": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\Excellerent.Standard.Advanced.Client.Infrastructure.csproj",
         "projectName": "Excellerent.Standard.Advanced.Client.Infrastructure",
         "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\Excellerent.Standard.Advanced.Client.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
         "outputPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -220,6 +220,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
