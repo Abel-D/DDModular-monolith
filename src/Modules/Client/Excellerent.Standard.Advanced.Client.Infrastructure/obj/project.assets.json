@@ -7634,7 +7634,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AD\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7642,11 +7642,11 @@
       "projectUniqueName": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\Excellerent.Standard.Advanced.Client.Infrastructure.csproj",
       "projectName": "Excellerent.Standard.Advanced.Client.Infrastructure",
       "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\Excellerent.Standard.Advanced.Client.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Modules\\Client\\Excellerent.Standard.Advanced.Client.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

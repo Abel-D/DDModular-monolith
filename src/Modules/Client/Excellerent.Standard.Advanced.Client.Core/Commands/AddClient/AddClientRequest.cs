@@ -9,13 +9,25 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
+    [Serializable]
     public class AddClientRequest : IRequest<Response<Guid>>
     {
-        public ClientEntity Client { get; set; }
-        public AddClientRequest(string name, string description) 
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public AddClientRequest(string name, string description)
         {
-            Client.Name=name;
-            Client.Description = description;
+            Name = name;
+            Description = description;
+        }
+
+        public static ClientEntity FromRequest(AddClientRequest request)
+        {
+            ClientEntity entity = new ClientEntity()
+            {
+                Name = request.Name,
+                Description = request.Description
+            };
+            return entity;
         }
     }
 }

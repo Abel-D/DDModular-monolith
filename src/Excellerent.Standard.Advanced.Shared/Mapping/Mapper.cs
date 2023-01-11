@@ -8,7 +8,7 @@ namespace Excellerent.Standard.Advanced.Shared.Mapping
 {
     public static class Mapper
     {
-        public static T Map<T>(object obj) where T:class,new ()
+        public static T Map<T>(object obj) where T : class, new()
         {
             var src = obj.GetType().GetProperties();
             var dest = typeof(T).GetProperties();

@@ -10,4 +10,9 @@
     <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Board\Commands\" />
+    <Folder Include="Board\Queries\" />
+  </ItemGroup>
+
 </Project>

@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
+    <ProjectReference Include="..\..\Client\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
+    <ProjectReference Include="..\Excellerent.Standard.Advanced.Project.Core\Excellerent.Standard.Advanced.Project.Core.csproj" />
+  </ItemGroup>
+
 </Project>

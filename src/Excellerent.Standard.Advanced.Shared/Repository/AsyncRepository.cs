@@ -1,4 +1,5 @@
 ﻿
+using Excellerent.Standard.Advanced.Shared.Data;
 using Excellerent.Standard.Advanced.Shared.Data.Seed;
 using Excellerent.Standard.Advanced.Shared.Database;
 using Excellerent.Standard.Advanced.Shared.Helpers;

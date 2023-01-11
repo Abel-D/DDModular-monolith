@@ -13,6 +13,10 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
 {
     internal class ClientContext : DbContext
     {
+        public ClientContext()
+        {
+
+        }
         public ClientContext(DbContextOptions<ClientContext> options) : base(options)
         {
         }

@@ -9,7 +9,8 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
     {
         public static IServiceCollection AddClientInfrastructureServices(this IServiceCollection services)
         {
-            services.AddScoped<IClientRepository,ClientRepository>();
+            services.AddScoped<ClientContext>();
+            services.AddScoped<IClientRepository, ClientRepository>();
             return services;
         }
     }

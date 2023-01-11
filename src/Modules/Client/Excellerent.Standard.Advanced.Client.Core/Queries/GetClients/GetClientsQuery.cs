@@ -1,13 +1,7 @@
 ﻿
 using Excellerent.Standard.Advanced.Shared.DTO;
-using Excellerent.Standard.Advanced.Shared.Entity;
 using Excellerent.Standard.Advanced.Shared.Helpers;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {

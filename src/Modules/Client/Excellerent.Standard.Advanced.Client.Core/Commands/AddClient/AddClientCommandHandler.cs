@@ -1,6 +1,7 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core.Contracts;
 using Excellerent.Standard.Advanced.Shared.DTO;
 using Excellerent.Standard.Advanced.Shared.Entity;
+using Excellerent.Standard.Advanced.Shared.Mapping;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
         }
         public async Task<Response<Guid>> Handle(AddClientCommand request, CancellationToken cancellationToken)
         {
-            var clientToAdd = await _repository.Add(request.Request.Client);
+            var clientToAdd = await _repository.Add(Mapper.Map<ClientEntity>(request.Request));
 
             return Response<Guid>.IsSuccessful(clientToAdd.Guid);
         }

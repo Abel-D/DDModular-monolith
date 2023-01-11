@@ -1,4 +1,6 @@
-﻿using Excellerent.Standard.Advanced.Shared.Data.Seed;
+﻿using Excellerent.Standard.Advanced.Project.Core.ValueObjects;
+using Excellerent.Standard.Advanced.Shared.Data;
+using Excellerent.Standard.Advanced.Shared.Data.Seed;
 using Excellerent.Standard.Advanced.Shared.Entity;
 using System;
 using System.Collections.Generic;
@@ -9,20 +11,12 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Project.Core
 {
-    internal class Project : BaseEntity<ProjectEntity>
+    internal class Project : AggregateRoot<ProjectId>
     {
-        public Guid ProjectId { get; set; }
+       
         public Guid ClientId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public override ProjectEntity MapToModel()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override ProjectEntity MapToModel(ProjectEntity t)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

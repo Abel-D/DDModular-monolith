@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Shared.Data.Seed
 {
-    public abstract class BaseEntity<T> where T : BaseAuditModel
+    public abstract class BaseEntity 
     {
         [Key]
         public virtual Guid Guid { get; set; }
@@ -15,18 +15,11 @@ namespace Excellerent.Standard.Advanced.Shared.Data.Seed
         public bool IsDeleted { get; set; }
         public DateTime CreatedDate { get; set; }
         public Guid CreatedbyUserGuid { get; set; }
-        public abstract T MapToModel();
-        public abstract T MapToModel(T t);
+       
         public BaseEntity()
         {
 
         }
-        public BaseEntity(T auditModel)
-        {
-            Guid = auditModel.Guid;
-            IsActive = auditModel.IsActive;
-            CreatedbyUserGuid = auditModel.CreatedbyUserGuid;
-            CreatedDate = auditModel.CreatedDate;
-        }
+        
     }
 }

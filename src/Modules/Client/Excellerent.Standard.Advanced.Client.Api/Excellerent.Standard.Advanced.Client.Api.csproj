@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
     <ProjectReference Include="..\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
     <ProjectReference Include="..\Excellerent.Standard.Advanced.Client.Infrastructure\Excellerent.Standard.Advanced.Client.Infrastructure.csproj" />

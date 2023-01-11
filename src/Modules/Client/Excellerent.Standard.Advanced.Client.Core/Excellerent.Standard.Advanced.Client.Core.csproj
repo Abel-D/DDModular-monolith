@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
   </ItemGroup>
 

@@ -22,14 +22,14 @@ namespace Excellerent.Standard.Advanced.Client.Api.Controllers
         }
        
         [HttpGet]
-        public async Task<IActionResult> GetClients(GetClientsRequest request)
+        public async Task<IActionResult> GetClients([FromQuery]GetClientsRequest request)
         {
             var clients = await _mediator.Send(new GetClientsQuery(request));
             return Ok(clients);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddClient(AddClientRequest request)
+        public async Task<IActionResult> AddClient([FromBody] AddClientRequest request)
         {
             var client = await _mediator.Send(new AddClientCommand(request));
             return Ok(client);
