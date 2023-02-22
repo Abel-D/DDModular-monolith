@@ -1,20 +1,48 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core.ValueObjects;
-using Excellerent.Standard.Advanced.Shared.Data;
-using Excellerent.Standard.Advanced.Shared.Data.Seed;
-using Excellerent.Standard.Advanced.Shared.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Data.Seed;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
-    internal class Client : AggregateRoot<ClientId>
+    public class Client : BaseEntity<ClientEntity>
     {
-       // public Guid ClientId { get;private set; }
-        public string Name { get;private set; }
-        public string Description { get; private set; }
+        public string name;
+        public string description;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                value = name;
+            }
+        }
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                value = description;
+            }
+        }
        
+        public override ClientEntity MapToEntity()
+        {
+           ClientEntity entity = new ClientEntity();
+            entity.Guid = Guid;
+            entity.name = Name;
+            entity.description = Description;
+            return entity;
+
+        }
+
+        public override ClientEntity MapToModel(ClientEntity entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

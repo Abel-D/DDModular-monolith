@@ -1,29 +1,27 @@
-﻿using Excellerent.Standard.Advanced.Client.Core.Contracts;
-using Excellerent.Standard.Advanced.Shared.DTO;
-using Excellerent.Standard.Advanced.Shared.Entity;
-using Excellerent.Standard.Advanced.Shared.Mapping;
+﻿
+using AutoMapper;
+using Excellerent.Standard.Advanced.Client.Core.Contracts;
+using Excellerent.Standard.Advanced.Shared.Api.DTO;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
-    internal class AddClientCommandHandler : IRequestHandler<AddClientCommand, Response<Guid>>
+    public class AddClientCommandHandler : IRequestHandler<AddClientCommand, Response<Guid>>
     {
         private readonly IClientRepository _repository;
+        private readonly IMapper _mapper;
 
-        public AddClientCommandHandler(IClientRepository repository)
+        public AddClientCommandHandler(IClientRepository repository,IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
         public async Task<Response<Guid>> Handle(AddClientCommand request, CancellationToken cancellationToken)
         {
-            var clientToAdd = await _repository.Add(Mapper.Map<ClientEntity>(request.Request));
+            var result = await _repository.Add(_mapper.Map<ClientEntity>(request.Request));
 
-            return Response<Guid>.IsSuccessful(clientToAdd.Guid);
+            return Response<Guid>.IsSuccessful(result.Guid);
         }
     }
 }

@@ -1,13 +1,6 @@
-﻿using Excellerent.Standard.Advanced.Client.Infrastructure;
-using Excellerent.Standard.Advanced.Shared.Database;
-using Excellerent.Standard.Advanced.Shared.Entity;
+﻿using Excellerent.Standard.Advanced.Client.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Infrastructure
 {
@@ -36,5 +29,5 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
             }
         }
     }
-    
+
 }

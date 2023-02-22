@@ -23,8 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Project.Api", "src\Modules\Project\Excellerent.Standard.Advanced.Project.Api\Excellerent.Standard.Advanced.Project.Api.csproj", "{046426AC-361A-4A11-994A-3D50FD0E4FB3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Shared", "src\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj", "{925CCF7E-9255-47FE-A276-7E56BD5DCBA4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Client.Api", "src\Modules\Client\Excellerent.Standard.Advanced.Client.Api\Excellerent.Standard.Advanced.Client.Api.csproj", "{C20D44E5-B505-4BD8-A355-E50162DB2AC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0CDBCAC-715B-43CF-BA82-F2C7C43C6001}"
@@ -40,9 +38,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{47F961B2-D9F3-48AC-BA0D-CE0A017D9798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excellerent.Standard.Advanced.Shared.Infrastructure", "src\Shared\Excellerent.Standard.Advanced.Shared.Infrastructure\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj", "{9C2D9ED9-B812-4C09-AC78-A9B7BCFCF77B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Shared.Infrastructure", "src\Shared\Excellerent.Standard.Advanced.Shared.Infrastructure\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj", "{9C2D9ED9-B812-4C09-AC78-A9B7BCFCF77B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excellerent.Standard.Advanced.Shared.Api", "src\Shared\Excellerent.Standard.Advanced.Shared.Api\Excellerent.Standard.Advanced.Shared.Api.csproj", "{57BBAE95-4C03-4116-A85F-14DD46F66952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Shared.Api", "src\Shared\Excellerent.Standard.Advanced.Shared.Api\Excellerent.Standard.Advanced.Shared.Api.csproj", "{57BBAE95-4C03-4116-A85F-14DD46F66952}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excellerent.Standard.Advanced.Shared.Application", "src\Shared\Excellerent.Standard.Advanced.Shared.Application\Excellerent.Standard.Advanced.Shared.Application.csproj", "{DF50E8BC-3694-4F67-A805-5CD16BC503ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,10 +78,6 @@ Global
 		{046426AC-361A-4A11-994A-3D50FD0E4FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046426AC-361A-4A11-994A-3D50FD0E4FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{046426AC-361A-4A11-994A-3D50FD0E4FB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{925CCF7E-9255-47FE-A276-7E56BD5DCBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{925CCF7E-9255-47FE-A276-7E56BD5DCBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{925CCF7E-9255-47FE-A276-7E56BD5DCBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{925CCF7E-9255-47FE-A276-7E56BD5DCBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C20D44E5-B505-4BD8-A355-E50162DB2AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C20D44E5-B505-4BD8-A355-E50162DB2AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C20D44E5-B505-4BD8-A355-E50162DB2AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -98,11 +94,16 @@ Global
 		{57BBAE95-4C03-4116-A85F-14DD46F66952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57BBAE95-4C03-4116-A85F-14DD46F66952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57BBAE95-4C03-4116-A85F-14DD46F66952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF50E8BC-3694-4F67-A805-5CD16BC503ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF50E8BC-3694-4F67-A805-5CD16BC503ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF50E8BC-3694-4F67-A805-5CD16BC503ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF50E8BC-3694-4F67-A805-5CD16BC503ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E8822694-42CE-4C16-BFEB-21BEEA76BC74} = {E0CDBCAC-715B-43CF-BA82-F2C7C43C6001}
 		{9ADC972C-1A05-4729-A6AA-42E766CCFDC6} = {E8822694-42CE-4C16-BFEB-21BEEA76BC74}
 		{E123287D-F4C3-458D-B25F-5EB747883093} = {9ADC972C-1A05-4729-A6AA-42E766CCFDC6}
 		{5EDCE4E7-A8FA-45B7-98DF-52346C1168B3} = {9ADC972C-1A05-4729-A6AA-42E766CCFDC6}
@@ -118,6 +119,7 @@ Global
 		{47F961B2-D9F3-48AC-BA0D-CE0A017D9798} = {E0CDBCAC-715B-43CF-BA82-F2C7C43C6001}
 		{9C2D9ED9-B812-4C09-AC78-A9B7BCFCF77B} = {47F961B2-D9F3-48AC-BA0D-CE0A017D9798}
 		{57BBAE95-4C03-4116-A85F-14DD46F66952} = {47F961B2-D9F3-48AC-BA0D-CE0A017D9798}
+		{DF50E8BC-3694-4F67-A805-5CD16BC503ED} = {47F961B2-D9F3-48AC-BA0D-CE0A017D9798}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55C6F542-E696-4F67-9D31-BD87AC7F1714}

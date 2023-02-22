@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Api\Excellerent.Standard.Advanced.Shared.Api.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Application\Excellerent.Standard.Advanced.Shared.Application.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Infrastructure\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj" />
   </ItemGroup>
 
-</Project>
+ </Project>

@@ -1,17 +1,12 @@
 ﻿using Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Project.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ProjectController:ControllerBase
+    public class ProjectController : ControllerBase
     {
         private readonly IMediator _mediator;
 

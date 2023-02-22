@@ -1,6 +1,6 @@
 ﻿
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
-using Microsoft.EntityFrameworkCore;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Excellerent.Standard.Advanced.Client.Infrastructure
@@ -11,6 +11,7 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
         {
             services.AddScoped<ClientContext>();
             services.AddScoped<IClientRepository, ClientRepository>();
+
             return services;
         }
     }

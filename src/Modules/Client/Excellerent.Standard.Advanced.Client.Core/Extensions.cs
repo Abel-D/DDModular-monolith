@@ -1,12 +1,9 @@
-﻿using Excellerent.Standard.Advanced.Client.Core.Contracts;
+﻿using Excellerent.Standard.Advanced.Client.Core.Commands.AddClient;
+using Excellerent.Standard.Advanced.Client.Core.Contracts;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
 using MediatR;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
@@ -14,7 +11,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
     {
         public static IServiceCollection AddClientCoreServices(this IServiceCollection services)
         {
-            services.AddScoped<IMediator, Mediator>();
+           
             services.AddTransient<IClientService, ClientService>();
             return services;
         }

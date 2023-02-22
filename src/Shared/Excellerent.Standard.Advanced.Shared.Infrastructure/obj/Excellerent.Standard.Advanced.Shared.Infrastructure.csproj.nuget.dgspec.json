@@ -4,6 +4,80 @@
     "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Infrastructure\\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj": {}
   },
   "projects": {
+    "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\Excellerent.Standard.Advanced.Shared.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\Excellerent.Standard.Advanced.Shared.Application.csproj",
+        "projectName": "Excellerent.Standard.Advanced.Shared.Application",
+        "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\Excellerent.Standard.Advanced.Shared.Application.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Nuget.local": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0-2.final, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Infrastructure\\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -22,12 +96,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Nuget.local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\Excellerent.Standard.Advanced.Shared.Application.csproj": {
+                "projectPath": "D:\\projects\\Excellerent.Standard.Advanced\\src\\Shared\\Excellerent.Standard.Advanced.Shared.Application\\Excellerent.Standard.Advanced.Shared.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,6 +118,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

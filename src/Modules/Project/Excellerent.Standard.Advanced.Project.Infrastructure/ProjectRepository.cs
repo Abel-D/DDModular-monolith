@@ -1,16 +1,8 @@
 ﻿using Excellerent.Standard.Advanced.Project.Core.Contracts;
-using Excellerent.Standard.Advanced.Shared.Entity;
-using Excellerent.Standard.Advanced.Shared.Helpers;
-using Excellerent.Standard.Advanced.Shared.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Project.Infrastructure
 {
-    internal class ProjectRepository:AsyncRepository<ProjectEntity>,IProjectRepository
+    internal class ProjectRepository : AsyncRepository<ProjectEntity>, IProjectRepository
     {
         public readonly ProjectContext _context;
         public ProjectRepository(ProjectContext context)

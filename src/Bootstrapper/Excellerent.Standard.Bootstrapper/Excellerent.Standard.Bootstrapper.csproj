@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
     <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Api\Excellerent.Standard.Advanced.Client.Api.csproj" />
     <ProjectReference Include="..\..\Modules\Project\Excellerent.Standard.Advanced.Project.Api\Excellerent.Standard.Advanced.Project.Api.csproj" />
   </ItemGroup>

@@ -1,9 +1,4 @@
-﻿using Excellerent.Standard.Advanced.Shared.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Excellerent.Standard.Advanced.Shared.Application.Helpers;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {
@@ -15,7 +10,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
         {
             this.PaginationParams = paginationParams ?? new PaginationParameters();
         }
-      
+
 
     }
 }

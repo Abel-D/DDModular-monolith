@@ -2,17 +2,12 @@
 using Excellerent.Standard.Advanced.Client.Core.Queries.GetClients;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClientController:ControllerBase
+    public class ClientController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -20,9 +15,9 @@ namespace Excellerent.Standard.Advanced.Client.Api.Controllers
         {
             _mediator = mediator;
         }
-       
+
         [HttpGet]
-        public async Task<IActionResult> GetClients([FromQuery]GetClientsRequest request)
+        public async Task<IActionResult> GetClients([FromQuery] GetClientsRequest request)
         {
             var clients = await _mediator.Send(new GetClientsQuery(request));
             return Ok(clients);

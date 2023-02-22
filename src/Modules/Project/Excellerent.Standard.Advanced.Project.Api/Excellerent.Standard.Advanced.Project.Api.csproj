@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Excellerent.Standard.Advanced.Shared\Excellerent.Standard.Advanced.Shared.csproj" />
     <ProjectReference Include="..\Excellerent.Standard.Advanced.Project.Core\Excellerent.Standard.Advanced.Project.Core.csproj" />
   </ItemGroup>
 
