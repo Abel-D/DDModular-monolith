@@ -1,33 +1,24 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace Excellerent.Standard.Advanced.Client.Infrastructure
 {
-    internal class ClientContext : DbContext
+    internal class BaseContext<ClientEntity>
     {
-        public ClientContext()
-        {
-
-        }
-        public ClientContext(DbContextOptions<ClientContext> options) : base(options)
-        {
-        }
         public DbSet<ClientEntity> Clients { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=3002;Server=localhost;Port=5432;Database=Client;Pooling=true;");
-        }
+      } 
 
-        internal class ClientContextFactory : IDesignTimeDbContextFactory<ClientContext>
-        {
-            public ClientContext CreateDbContext(string[] args)
-            {
-                var optionsBuilder = new DbContextOptionsBuilder<ClientContext>();
+        //internal class ClientContextFactory : IDesignTimeDbContextFactory<BaseContext<ClientEntity>>
+        //{
+        //    public BaseContext<ClientEntity> CreateDbContext(string[] args)
+        //    {
+        //        var optionsBuilder = new DbContextOptionsBuilder<BaseContext<ClientEntity>>();
 
-                return new ClientContext(optionsBuilder.Options);
-            }
-        }
+        //        return new BaseContext<ClientEntity>(optionsBuilder.Options);
+        //    }
+        //}
     }
 
 }

@@ -6,7 +6,7 @@ public static class Extensions
 {
     public static IServiceCollection AddSharedApplicationServices(this IServiceCollection services)
     {
-     // services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+      services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
       return services;
     }
     public static IApplicationBuilder UseSharedInfrastructureModule(this IApplicationBuilder builder)

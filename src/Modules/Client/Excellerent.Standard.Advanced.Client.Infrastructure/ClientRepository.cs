@@ -6,9 +6,9 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
 {
     internal class ClientRepository : AsyncRepository<ClientEntity>, IClientRepository
     {
-        private readonly ClientContext _context;
+        private readonly BaseContext<ClientEntity> _context;
 
-        public ClientRepository(ClientContext context)
+        public ClientRepository(BaseContext<ClientEntity> context)
         {
             _context = context;
         }

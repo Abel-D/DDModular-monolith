@@ -17,7 +17,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Api\Excellerent.Standard.Advanced.Client.Api.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Infrastructure\Excellerent.Standard.Advanced.Client.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Shared\Excellerent.Standard.Advanced.Client.Shared.csproj" />
     <ProjectReference Include="..\..\Modules\Project\Excellerent.Standard.Advanced.Project.Api\Excellerent.Standard.Advanced.Project.Api.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Standard.Advanced.Shared.Api\Excellerent.Standard.Advanced.Shared.Api.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Standard.Advanced.Shared.Application\Excellerent.Standard.Advanced.Shared.Application.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Standard.Advanced.Shared.Infrastructure\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
