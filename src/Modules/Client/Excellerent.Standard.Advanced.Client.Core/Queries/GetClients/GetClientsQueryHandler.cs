@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
+using Excellerent.Standard.Advanced.Shared.Application;
 using Excellerent.Standard.Advanced.Shared.Application.Helpers;
+using MediatR;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {

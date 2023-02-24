@@ -2,6 +2,7 @@
 using AutoMapper;
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
 using Excellerent.Standard.Advanced.Shared.Application;
+using MediatR;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {

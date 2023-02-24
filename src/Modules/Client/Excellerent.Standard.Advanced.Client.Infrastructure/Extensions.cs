@@ -1,6 +1,7 @@
 ﻿
 using Excellerent.Standard.Advanced.Client.Core;
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
+using Excellerent.Standard.Advanced.Shared.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

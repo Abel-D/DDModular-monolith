@@ -1,4 +1,7 @@
-﻿namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
+﻿using Excellerent.Standard.Advanced.Shared.Application;
+using MediatR;
+
+namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
     [Serializable]
     public class AddClientRequest : IRequest<Response<Guid>>

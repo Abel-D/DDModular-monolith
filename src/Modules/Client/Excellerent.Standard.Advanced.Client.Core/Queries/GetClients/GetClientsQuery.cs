@@ -1,4 +1,6 @@
-﻿using Excellerent.Standard.Advanced.Shared.Application.Helpers;
+﻿using Excellerent.Standard.Advanced.Shared.Application;
+using Excellerent.Standard.Advanced.Shared.Application.Helpers;
+using MediatR;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {
