@@ -1,21 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Excellerent.Standard.Advanced.Client.Core;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection;
 
 namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Database
 {
-    public class BaseContext<T> : DbContext where T: class
+    public class BaseContext : DbContext
     {
         public BaseContext()
         {
 
         }
 
-        public BaseContext(DbContextOptions<BaseContext<T>> options) : base(options)
-        {
-
-        }
-        protected BaseContext(DbContextOptions options) : base(options)
+        public BaseContext(DbContextOptions<BaseContext> options) : base(options)
         {
 
         }
@@ -40,6 +37,6 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Database
 
             base.OnModelCreating(modelBuilder);
         }
-
+        public DbSet<ClientEntity> Clients { get; set; }
     }
 }

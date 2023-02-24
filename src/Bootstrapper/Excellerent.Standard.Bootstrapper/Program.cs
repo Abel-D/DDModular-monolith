@@ -1,11 +1,5 @@
 using Excellerent.Standard.Advanced.Client.Api;
-using Excellerent.Standard.Advanced.Client.Core.Commands.AddClient;
-using Excellerent.Standard.Advanced.Client.Core.Queries.GetClients;
-using Excellerent.Standard.Advanced.Shared.Infrastructure;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
 using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 

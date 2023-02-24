@@ -1,9 +1,7 @@
 ﻿
 using AutoMapper;
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
-using Excellerent.Standard.Advanced.Shared.Api.DTO;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
-using MediatR;
+using Excellerent.Standard.Advanced.Shared.Application;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
@@ -12,7 +10,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
         private readonly IClientRepository _repository;
         private readonly IMapper _mapper;
 
-        public AddClientCommandHandler(IClientRepository repository,IMapper mapper)
+        public AddClientCommandHandler(IClientRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

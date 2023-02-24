@@ -1,5 +1,4 @@
-﻿using Excellerent.Standard.Advanced.Client.Core.ValueObjects;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Data.Seed;
+﻿using Excellerent.Standard.Advanced.Shared.Application.Data.Seed;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
@@ -29,10 +28,10 @@ namespace Excellerent.Standard.Advanced.Client.Core
                 value = description;
             }
         }
-       
+
         public override ClientEntity MapToEntity()
         {
-           ClientEntity entity = new ClientEntity();
+            ClientEntity entity = new ClientEntity();
             entity.Guid = Guid;
             entity.name = Name;
             entity.description = Description;

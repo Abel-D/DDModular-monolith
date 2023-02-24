@@ -1,7 +1,4 @@
-﻿using Excellerent.Standard.Advanced.Shared.Api.DTO;
-using Excellerent.Standard.Advanced.Shared.Application.Helpers;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Query;
-using MediatR;
+﻿using Excellerent.Standard.Advanced.Shared.Application.Helpers;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {

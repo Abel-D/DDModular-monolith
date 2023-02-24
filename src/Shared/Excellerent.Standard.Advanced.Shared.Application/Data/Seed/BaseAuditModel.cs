@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Data.Seed
+namespace Excellerent.Standard.Advanced.Shared.Application.Data.Seed
 {
     public class BaseAuditModel
     {

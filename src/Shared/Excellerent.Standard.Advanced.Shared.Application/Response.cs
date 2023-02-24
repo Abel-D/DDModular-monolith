@@ -1,6 +1,4 @@
-﻿using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
-
-namespace Excellerent.Standard.Advanced.Shared.Api.DTO
+﻿namespace Excellerent.Standard.Advanced.Shared.Application
 {
     public class Response<T>
     {

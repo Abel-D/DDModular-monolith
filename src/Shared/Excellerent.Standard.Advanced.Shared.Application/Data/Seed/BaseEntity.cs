@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Data.Seed
+namespace Excellerent.Standard.Advanced.Shared.Application.Data.Seed
 {
     public abstract class BaseEntity<T> where T : BaseAuditModel
     {

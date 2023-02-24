@@ -9,7 +9,7 @@ namespace Excellerent.Standard.Advanced.Client.Api
 {
     public static class Extensions
     {
-        public static IServiceCollection AddClientModule(this IServiceCollection services,IConfiguration configuration)
+        public static IServiceCollection AddClientModule(this IServiceCollection services, IConfiguration configuration)
         {
 
             services.AddClientInfrastructureServices(configuration);

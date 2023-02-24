@@ -1,24 +1,20 @@
-﻿using Excellerent.Standard.Advanced.Shared.Infrastructure.Data.Seed;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Excellerent.Standard.Advanced.Shared.Application.Data.Seed;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
-    public class ClientEntity:BaseAuditModel
+    public class ClientEntity : BaseAuditModel
     {
         public ClientEntity()
         {
 
         }
-        public string Name {
+        public string Name
+        {
             get
             {
                 return name;
             }
-           private set
+            private set
             {
                 value = name;
             }
@@ -29,9 +25,9 @@ namespace Excellerent.Standard.Advanced.Client.Core
             {
                 return description;
             }
-           private set
+            private set
             {
-                value=description;
+                value = description;
             }
         }
         public string name;

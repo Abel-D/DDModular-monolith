@@ -1,4 +1,4 @@
-﻿namespace Excellerent.Standard.Advanced.Shared.Api.DTO
+﻿namespace Excellerent.Standard.Advanced.Shared.Application
 {
     public class Request<T>
     {

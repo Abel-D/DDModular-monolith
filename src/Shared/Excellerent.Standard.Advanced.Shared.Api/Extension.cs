@@ -1,10 +1,7 @@
 ﻿using Excellerent.Standard.Advanced.Shared.Infrastructure;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Command;
-using Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Query;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 public static class Extensions
 {

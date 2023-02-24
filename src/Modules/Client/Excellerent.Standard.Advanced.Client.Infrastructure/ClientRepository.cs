@@ -13,6 +13,6 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
             _context = context;
         }
 
-       
+
     }
 }

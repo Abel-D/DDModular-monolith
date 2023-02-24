@@ -1,7 +1,4 @@
-﻿using Excellerent.Standard.Advanced.Shared.Api.DTO;
-using MediatR;
-
-namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
+﻿namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
 {
     [Serializable]
     public class AddClientRequest : IRequest<Response<Guid>>
@@ -9,7 +6,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public AddClientRequest(string name,string description)
+        public AddClientRequest(string name, string description)
         {
             Name = name;
             Description = description;

@@ -1,6 +1,6 @@
 ﻿using Excellerent.Standard.Advanced.Shared.Application.Helpers;
 
-namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Contracts.Repository
+namespace Excellerent.Standard.Advanced.Shared.Application.Contracts.Repository
 {
     public interface IAsyncRepository<T> where T : class
     {
