@@ -12,8 +12,7 @@ namespace Excellerent.Standard.Advanced.Client.Infrastructure
     {
         public static IServiceCollection AddClientInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<BaseContext>(options =>
-                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            
             services.AddScoped<IClientRepository, ClientRepository>();
 
             return services;

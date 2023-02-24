@@ -15,8 +15,8 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
       
         public async Task<T> Add(T t)
         {
-            await _context.Set<T>().AddAsync(t);
-            _context.SaveChanges();
+            _context.Set<T>().AddAsync(t);
+            await _context.SaveChangesAsync(CancellationToken.None);
             return t;
         }
 
