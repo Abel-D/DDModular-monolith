@@ -1,5 +1,7 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core.Commands.AddClient;
+using Excellerent.Standard.Advanced.Client.Core.Commands.DeleteClient;
 using Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient;
+using Excellerent.Standard.Advanced.Client.Core.Queries.GetClientById;
 using Excellerent.Standard.Advanced.Client.Core.Queries.GetClients;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -23,7 +25,12 @@ namespace Excellerent.Standard.Advanced.Client.Api.Controllers
             var clients = await _mediator.Send(new GetClientsQuery(request));
             return Ok(clients);
         }
-
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetClientById([FromQuery] GetClientByIdRequest request)
+        {
+            var client = await _mediator.Send(new GetClientByIdQuery(request));
+            return Ok(client);
+        }
         [HttpPost]
         public async Task<IActionResult> AddClient([FromBody] AddClientRequest request)
         {
@@ -33,8 +40,14 @@ namespace Excellerent.Standard.Advanced.Client.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateClient([FromBody] UpdateClientRequest request)
         {
-            var updateClient=await _mediator.Send(new UpdateClientCommand(request));
-            return Ok(updateClient);
+            var result = await _mediator.Send(new UpdateClientCommand(request));
+            return Ok(result);
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteClient(DeleteClientRequest request)
+        {
+            var result = await _mediator.Send(new DeleteClientCommand(request));
+            return Ok(result);
         }
     }
 }

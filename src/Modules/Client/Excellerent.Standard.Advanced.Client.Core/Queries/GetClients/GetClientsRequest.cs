@@ -8,6 +8,6 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
         {
 
         }
-        public PaginationParameters PaginationParams { get; set; }=new PaginationParameters();
-}
+        public PaginationParameters PaginationParams { get; set; } = new PaginationParameters();
+    }
 }

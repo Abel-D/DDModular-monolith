@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Excellerent.Standard.Advanced.Shared.Infrastructure;
 public static class Extensions
 {
-    public static IServiceCollection AddSharedInfrastructureServices(this IServiceCollection services,IConfiguration configuration)
+    public static IServiceCollection AddSharedInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<BaseContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));

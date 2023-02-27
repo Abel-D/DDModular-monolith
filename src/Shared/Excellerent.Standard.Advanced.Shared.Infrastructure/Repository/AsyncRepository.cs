@@ -12,7 +12,7 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
         {
             _context = context ?? throw new ArgumentNullException();
         }
-      
+
         public async Task<T> Add(T t)
         {
             _context.Set<T>().AddAsync(t);
@@ -22,14 +22,18 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
 
         public async Task Delete(T t)
         {
-           
             _context.Set<T>().Remove(t);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync(CancellationToken.None);
         }
 
         public async Task<IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
         {
             return PagedList<T>.ToPagedList(_context.Set<T>().AsEnumerable<T>(), paginationParameters.PageNumber, paginationParameters.PageSize);
+        }
+
+        public async Task<T> GetById(Guid id)
+        {
+            return await _context.Set<T>().FindAsync(id);
         }
 
         public async Task<T> Update(T t)

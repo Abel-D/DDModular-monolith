@@ -1,5 +1,4 @@
 using Excellerent.Standard.Advanced.Client.Api;
-using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 

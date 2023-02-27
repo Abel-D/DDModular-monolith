@@ -8,5 +8,6 @@ namespace Excellerent.Standard.Advanced.Shared.Application.Contracts.Repository
         Task<T> Add(T t);
         Task<T> Update(T t);
         Task Delete(T t);
+        Task<T> GetById(Guid id);
     }
 }

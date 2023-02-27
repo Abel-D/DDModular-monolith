@@ -1,8 +1,6 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core;
 using Excellerent.Standard.Advanced.Shared.Application.Data.Seed;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection;
 
 namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Database
 {

@@ -4,28 +4,28 @@ namespace Excellerent.Standard.Advanced.Client.Core
 {
     public class Client : BaseEntity<ClientEntity>
     {
-        public string name;
-        public string description;
-        private string Name
+        private string _name;
+        private string _description;
+        public string Name
         {
             get
             {
-                return name;
+                return _name;
             }
             set
             {
-                value = name;
+                _name = value;
             }
         }
-        private string Description
+        public string Description
         {
             get
             {
-                return description;
+                return _description;
             }
             set
             {
-                value = description;
+                _description = value;
             }
         }
 

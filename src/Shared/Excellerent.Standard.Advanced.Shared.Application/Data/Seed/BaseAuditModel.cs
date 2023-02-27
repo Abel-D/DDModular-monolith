@@ -66,5 +66,5 @@ namespace Excellerent.Standard.Advanced.Shared.Application.Data.Seed
                 return type.BaseType;
             return type;
         }
-}
+    }
 }
