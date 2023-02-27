@@ -6,7 +6,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
     {
         public string name;
         public string description;
-        public string Name
+        private string Name
         {
             get
             {
@@ -17,7 +17,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
                 value = name;
             }
         }
-        public string Description
+        private string Description
         {
             get
             {

@@ -1,4 +1,5 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core.Commands.AddClient;
+using Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient;
 using Excellerent.Standard.Advanced.Client.Core.Queries.GetClients;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +29,12 @@ namespace Excellerent.Standard.Advanced.Client.Api.Controllers
         {
             var client = await _mediator.Send(new AddClientCommand(request));
             return Ok(client);
+        }
+        [HttpPut]
+        public async Task<IActionResult> UpdateClient([FromBody] UpdateClientRequest request)
+        {
+            var updateClient=await _mediator.Send(new UpdateClientCommand(request));
+            return Ok(updateClient);
         }
     }
 }

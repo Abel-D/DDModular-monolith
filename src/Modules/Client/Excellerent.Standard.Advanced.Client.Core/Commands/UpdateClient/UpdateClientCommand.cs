@@ -15,8 +15,8 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient
             client = new Client
             {
                 Guid = clientRequest.ClientId,
-                Name = clientRequest.Name,
-                Description = clientRequest.Description,
+                name = clientRequest.Name,
+                description = clientRequest.Description,
             };
         }
         public Client client { get;private set; }

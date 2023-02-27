@@ -32,9 +32,11 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
             return PagedList<T>.ToPagedList(_context.Set<T>().AsEnumerable<T>(), paginationParameters.PageNumber, paginationParameters.PageSize);
         }
 
-        public Task<T> Update(T t)
+        public async Task<T> Update(T t)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(t);
+            await _context.SaveChangesAsync(CancellationToken.None);
+            return t;
         }
     }
 }

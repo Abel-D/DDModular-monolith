@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient
 {
-      public class UpdateClientRequest
+    public class UpdateClientRequest
     {
-        [JsonConstructor]
-        public UpdateClientRequest(Guid id, string name,string description)
+        public UpdateClientRequest()
         {
-            this.ClientId = id;
-            this.Name=name;
-            this.Description=description;
+
         }
         public Guid ClientId { get; set; }
         public string Name { get; set; }
