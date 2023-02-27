@@ -20,12 +20,15 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
         {
 
             var result = await _repository.GetAllAsync(request.request.PaginationParams);
+            List<Client> clients=new List<Client>();
 
-            foreach (var res in result)
+            foreach(var res in result)
             {
-                _mapper.Map<Client>(res);
+                Client client=_mapper.Map<Client>(res);
+                clients.Add(client);
             }
-            return Response<PagedList<Client>>.IsSuccessful((PagedList<Client>)result);
+            
+            return Response<PagedList<Client>>.IsSuccessful(PagedList<Client>.ToPagedList(clients,request.request.PaginationParams.PageNumber,request.request.PaginationParams.PageSize));
         }
     }
 }

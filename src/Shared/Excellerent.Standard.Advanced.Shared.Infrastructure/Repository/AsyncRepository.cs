@@ -27,9 +27,9 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
             _context.SaveChanges();
         }
 
-        public Task<IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
+        public async Task<IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
         {
-            throw new NotImplementedException();
+            return PagedList<T>.ToPagedList(_context.Set<T>().AsEnumerable<T>(), paginationParameters.PageNumber, paginationParameters.PageSize);
         }
 
         public Task<T> Update(T t)
