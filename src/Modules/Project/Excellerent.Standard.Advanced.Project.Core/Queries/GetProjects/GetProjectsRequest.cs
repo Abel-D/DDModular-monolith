@@ -1,11 +1,12 @@
-﻿namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
+﻿using Excellerent.Standard.Advanced.Shared.Application.Helpers;
+
+namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
 {
     public class GetProjectsRequest
     {
-        public PaginationParameters PaginationParameters { get; set; }
-        public GetProjectsRequest(PaginationParameters pagination)
+        public PaginationParameters PaginationParameters { get; set; } = new PaginationParameters();
+        public GetProjectsRequest()
         {
-            this.PaginationParameters = pagination ?? new PaginationParameters();
         }
     }
 }

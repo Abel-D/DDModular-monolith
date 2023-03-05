@@ -2,7 +2,7 @@
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
-    internal class ClientService : IClientService
+    internal class ClientService 
     {
     }
 }

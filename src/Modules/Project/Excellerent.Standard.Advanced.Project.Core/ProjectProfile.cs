@@ -7,6 +7,7 @@ namespace Excellerent.Standard.Advanced.Project.Core
         public ProjectProfile()
         {
             CreateMap<ProjectEntity, Project>();
+            CreateMap<Project, ProjectEntity>();
         }
     }
 }

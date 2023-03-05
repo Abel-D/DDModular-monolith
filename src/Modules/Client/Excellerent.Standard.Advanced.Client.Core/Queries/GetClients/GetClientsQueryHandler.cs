@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {
-    public class GetClientsQueryHandler : IRequestHandler<GetClientsQuery, Response<PagedList<Client>>>
+    public class GetClientsQueryHandler : IRequestHandler<GetClientsQuery, Response<Shared.Application.Helpers.IEnumerable<Client>>>
     {
         private readonly IClientRepository _repository;
         private readonly IMapper _mapper;
@@ -16,7 +16,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
             _repository = repository;
             _mapper = mapper;
         }
-        public async Task<Response<PagedList<Client>>> Handle(GetClientsQuery request, CancellationToken cancellationToken)
+        public async Task<Response<Shared.Application.Helpers.IEnumerable<Client>>> Handle(GetClientsQuery request, CancellationToken cancellationToken)
         {
 
             var result = await _repository.GetAllAsync(request.request.PaginationParams);
@@ -28,7 +28,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
                 clients.Add(client);
             }
 
-            return Response<PagedList<Client>>.IsSuccessful(PagedList<Client>.ToPagedList(clients, request.request.PaginationParams.PageNumber, request.request.PaginationParams.PageSize));
+            return Response<Shared.Application.Helpers.IEnumerable<Client>>.IsSuccessful(Shared.Application.Helpers.IEnumerable<Client>.ToPagedList(clients, request.request.PaginationParams.PageNumber, request.request.PaginationParams.PageSize));
         }
     }
 }

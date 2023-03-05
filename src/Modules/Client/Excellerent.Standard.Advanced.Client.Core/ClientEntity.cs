@@ -12,25 +12,25 @@ namespace Excellerent.Standard.Advanced.Client.Core
         {
             get
             {
-                return name;
+                return _name;
             }
-            private set
+             set
             {
-                value = name;
+                value = _name;
             }
         }
         public string Description
         {
             get
             {
-                return description;
+                return _description;
             }
-            private set
+            set
             {
-                value = description;
+                value = _description;
             }
         }
-        public string name;
-        public string description;
+        private string _name;
+        private string _description;
     }
 }

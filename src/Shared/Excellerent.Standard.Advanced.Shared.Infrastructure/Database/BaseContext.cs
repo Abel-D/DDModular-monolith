@@ -1,4 +1,5 @@
 ﻿using Excellerent.Standard.Advanced.Client.Core;
+using Excellerent.Standard.Advanced.Project.Core;
 using Excellerent.Standard.Advanced.Shared.Application.Data.Seed;
 using Microsoft.EntityFrameworkCore;
 
@@ -48,5 +49,6 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Database
             return base.SaveChangesAsync(cancellationToken);
         }
         public DbSet<ClientEntity> Clients { get; set; }
+        public DbSet<ProjectEntity> projects{ get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Excellerent.Standard.Advanced.Shared.Infrastructure.Repository;
+﻿
+using Excellerent.Standard.Advanced.Shared.Application.Contracts.Repository;
 
 namespace Excellerent.Standard.Advanced.Project.Core.Contracts
 {

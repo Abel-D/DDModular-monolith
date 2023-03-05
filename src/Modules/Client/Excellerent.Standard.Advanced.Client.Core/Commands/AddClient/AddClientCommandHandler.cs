@@ -20,8 +20,8 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
         {
             ClientEntity newClient = new ClientEntity
             {
-                name = request.Request.Name,
-                description = request.Request.Description
+                Name = request.Request.Name,
+                Description = request.Request.Description
             };
             var result = await _repository.Add(newClient);
 

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Infrastructure\Excellerent.Standard.Advanced.Shared.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Client\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
     <ProjectReference Include="..\Excellerent.Standard.Advanced.Project.Core\Excellerent.Standard.Advanced.Project.Core.csproj" />
   </ItemGroup>

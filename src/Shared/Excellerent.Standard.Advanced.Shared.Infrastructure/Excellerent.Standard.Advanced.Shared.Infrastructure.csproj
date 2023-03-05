@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Modules\Client\Excellerent.Standard.Advanced.Client.Core\Excellerent.Standard.Advanced.Client.Core.csproj" />
+    <ProjectReference Include="..\..\Modules\Project\Excellerent.Standard.Advanced.Project.Core\Excellerent.Standard.Advanced.Project.Core.csproj" />
   </ItemGroup>
 
 </Project>

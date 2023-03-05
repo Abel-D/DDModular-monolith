@@ -15,6 +15,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
             set
             {
                 _name = value;
+                value = _name;
             }
         }
         public string Description
@@ -26,6 +27,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
             set
             {
                 _description = value;
+                value = _description;
             }
         }
 
@@ -33,8 +35,8 @@ namespace Excellerent.Standard.Advanced.Client.Core
         {
             ClientEntity entity = new ClientEntity();
             entity.Guid = Guid;
-            entity.name = Name;
-            entity.description = Description;
+            entity.Name = Name;
+            entity.Description = Description;
             return entity;
 
         }

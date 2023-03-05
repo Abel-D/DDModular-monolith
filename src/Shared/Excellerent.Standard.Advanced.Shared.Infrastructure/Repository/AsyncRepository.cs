@@ -26,9 +26,9 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
             await _context.SaveChangesAsync(CancellationToken.None);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
+        public async Task<System.Collections.Generic.IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
         {
-            return PagedList<T>.ToPagedList(_context.Set<T>().AsEnumerable<T>(), paginationParameters.PageNumber, paginationParameters.PageSize);
+            return Application.Helpers.IEnumerable<T>.ToPagedList(_context.Set<T>().AsEnumerable(), paginationParameters.PageNumber, paginationParameters.PageSize);
         }
 
         public async Task<T> GetById(Guid id)

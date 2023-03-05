@@ -1,13 +1,16 @@
-﻿using MediatR;
+﻿using Excellerent.Standard.Advanced.Shared.Application;
+using MediatR;
 
 namespace Excellerent.Standard.Advanced.Project.Core.Commands.Add_Project
 {
-    internal record AddProjectRequest : IRequest<Response<Guid>>
+    public class AddProjectRequest : IRequest<Response<Guid>>
     {
-        public ProjectEntity Project { get; set; }
-        public AddProjectRequest(Project project)
+        public AddProjectRequest()
         {
-            this.Project = Project;
         }
+        public Guid ClientId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
     }
 }
