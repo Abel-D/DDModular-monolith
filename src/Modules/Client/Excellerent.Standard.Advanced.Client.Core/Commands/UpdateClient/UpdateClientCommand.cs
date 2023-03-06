@@ -7,13 +7,8 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient
     {
         public UpdateClientCommand(UpdateClientRequest clientRequest)
         {
-            client = new Client
-            {
-                Guid = clientRequest.ClientId,
-                Name = clientRequest.Name,
-                Description = clientRequest.Description,
-            };
+            this.Request = clientRequest;
         }
-        public Client client { get; private set; }
+        public UpdateClientRequest Request { get; private set; }
     }
 }

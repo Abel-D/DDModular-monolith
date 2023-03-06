@@ -18,11 +18,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.AddClient
         }
         public async Task<Response<Guid>> Handle(AddClientCommand request, CancellationToken cancellationToken)
         {
-            ClientEntity newClient = new ClientEntity
-            {
-                Name = request.Request.Name,
-                Description = request.Request.Description
-            };
+            ClientEntity newClient = _mapper.Map<ClientEntity>(request.Request);
             var result = await _repository.Add(newClient);
 
             return Response<Guid>.IsSuccessful(result.Guid);

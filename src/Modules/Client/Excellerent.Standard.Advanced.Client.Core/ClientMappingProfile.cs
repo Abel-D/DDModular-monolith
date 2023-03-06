@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Excellerent.Standard.Advanced.Client.Core.Commands.AddClient;
+using Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
@@ -10,6 +11,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
             CreateMap<Client, ClientEntity>();
             CreateMap<AddClientRequest, Client>();
             CreateMap<AddClientRequest, ClientEntity>();
+            CreateMap<UpdateClientRequest, ClientEntity>();
             CreateMap<ClientEntity, Client>();
         }
     }

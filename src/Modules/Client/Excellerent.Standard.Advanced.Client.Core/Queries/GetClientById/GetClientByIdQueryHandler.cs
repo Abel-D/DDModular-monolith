@@ -22,7 +22,7 @@ namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClientById
 
             if (client == null)
             {
-                return Response<Client>.IsError(new Exception("{request.Request.ClientId.ToString()} doesnot exist"));
+                return Response<Client>.IsError(new Exception(request.Request.ClientId.ToString()+" doesnot exist"));
             }
 
             return Response<Client>.IsSuccessful(_mapper.Map<Client>(client));

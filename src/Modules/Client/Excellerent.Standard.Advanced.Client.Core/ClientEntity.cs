@@ -16,7 +16,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
             }
              set
             {
-                value = _name;
+               _name = value;
             }
         }
         public string Description
@@ -27,7 +27,7 @@ namespace Excellerent.Standard.Advanced.Client.Core
             }
             set
             {
-                value = _description;
+                _description = value;
             }
         }
         private string _name;

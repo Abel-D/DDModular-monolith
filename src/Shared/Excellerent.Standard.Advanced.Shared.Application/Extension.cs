@@ -13,5 +13,6 @@ public static class Extensions
     public static IApplicationBuilder UseSharedInfrastructureModule(this IApplicationBuilder builder)
     {
         return builder;
+ 
     }
 }

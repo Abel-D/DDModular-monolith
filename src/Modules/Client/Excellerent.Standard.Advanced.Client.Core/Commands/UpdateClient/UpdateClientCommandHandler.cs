@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Excellerent.Standard.Advanced.Client.Core.Contracts;
+using Excellerent.Standard.Advanced.Client.Core.ValueObjects;
 using Excellerent.Standard.Advanced.Shared.Application;
 using MediatR;
 
@@ -17,7 +18,8 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient
         }
         public async Task<Response<Guid>> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
         {
-            var result = await _repository.Update(_mapper.Map<ClientEntity>(request.client));
+            var client =_mapper.Map<ClientEntity>(request.Request);
+            var result = await _repository.Update(client);
 
             return Response<Guid>.IsSuccessful(result.Guid);
         }

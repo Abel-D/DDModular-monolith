@@ -24,7 +24,6 @@ namespace Excellerent.Standard.Advanced.Project.Core.Commands.Add_Project
         {
             var project = new Project
             {
-                ClientId = request.Request.ClientId,
                 Name = request.Request.Name,
                 Description = request.Request.Description,
             };
