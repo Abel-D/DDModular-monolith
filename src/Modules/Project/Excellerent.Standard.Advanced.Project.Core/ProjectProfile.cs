@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Excellerent.Standard.Advanced.Project.Core.Commands.Add_Project;
 
 namespace Excellerent.Standard.Advanced.Project.Core
 {
@@ -8,6 +9,7 @@ namespace Excellerent.Standard.Advanced.Project.Core
         {
             CreateMap<ProjectEntity, Project>();
             CreateMap<Project, ProjectEntity>();
+            CreateMap<AddProjectRequest, Project>();
         }
     }
 }

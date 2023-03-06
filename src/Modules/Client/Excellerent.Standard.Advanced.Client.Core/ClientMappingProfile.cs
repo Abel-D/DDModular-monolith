@@ -10,8 +10,8 @@ namespace Excellerent.Standard.Advanced.Client.Core
         {
             CreateMap<Client, ClientEntity>();
             CreateMap<AddClientRequest, Client>();
-            CreateMap<AddClientRequest, ClientEntity>();
-            CreateMap<UpdateClientRequest, ClientEntity>();
+            CreateMap<AddClientRequest, Client>();
+            CreateMap<UpdateClientRequest, Client>();
             CreateMap<ClientEntity, Client>();
         }
     }
