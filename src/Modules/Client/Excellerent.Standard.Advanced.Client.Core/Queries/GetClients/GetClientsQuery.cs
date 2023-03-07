@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Excellerent.Standard.Advanced.Client.Core.Queries.GetClients
 {
-    public record GetClientsQuery : IRequest<Response<Shared.Application.Helpers.IEnumerable<Excellerent.Standard.Advanced.Client.Core.Client>>>
+    public record GetClientsQuery : IRequest<Response<PagedList<Excellerent.Standard.Advanced.Client.Core.Client>>>
     {
         public GetClientsRequest request { get; set; }
         public GetClientsQuery(GetClientsRequest getClientsRequest)

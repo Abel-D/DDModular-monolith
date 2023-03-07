@@ -13,11 +13,11 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Database
         }
         public BaseContext(DbContextOptions<BaseContext> options) : base(options)
         {
-
+            
         }
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
-            base.OnModelCreating(builder);
+           base.OnModelCreating(modelbuilder);
         }
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {

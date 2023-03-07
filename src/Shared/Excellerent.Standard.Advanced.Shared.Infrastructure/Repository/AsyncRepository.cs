@@ -1,6 +1,7 @@
 ﻿using Excellerent.Standard.Advanced.Shared.Application.Contracts.Repository;
 using Excellerent.Standard.Advanced.Shared.Application.Helpers;
 using Excellerent.Standard.Advanced.Shared.Infrastructure.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
 {
@@ -26,9 +27,9 @@ namespace Excellerent.Standard.Advanced.Shared.Infrastructure.Repository
             await _context.SaveChangesAsync(CancellationToken.None);
         }
 
-        public async Task<System.Collections.Generic.IEnumerable<T>> GetAllAsync(PaginationParameters paginationParameters)
+        public async Task<PagedList<T>> GetAllAsync(PaginationParameters paginationParameters)
         {
-            return Application.Helpers.IEnumerable<T>.ToPagedList(_context.Set<T>().AsEnumerable(), paginationParameters.PageNumber, paginationParameters.PageSize);
+            return PagedList<T>.ToPagedList(_context.Set<T>().AsNoTracking().AsEnumerable(), paginationParameters.PageNumber, paginationParameters.PageSize);
         }
 
         public async Task<T> GetById(Guid id)

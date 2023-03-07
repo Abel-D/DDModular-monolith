@@ -1,4 +1,7 @@
 ﻿using Excellerent.Standard.Advanced.Project.Core.Commands.Add_Project;
+using Excellerent.Standard.Advanced.Project.Core.Commands.Delete_Project;
+using Excellerent.Standard.Advanced.Project.Core.Commands.Update_Project;
+using Excellerent.Standard.Advanced.Project.Core.Queries.GetProjectById;
 using Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -25,15 +28,26 @@ namespace Excellerent.Standard.Advanced.Project.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProject([FromBody] AddProjectRequest request)
         {
-            var addedProject = await _mediator.Send(new AddProjectCommand(request));
-            return Ok(addedProject);
+            var addProject = await _mediator.Send(new AddProjectCommand(request));
+            return Ok(addProject);
         }
-        [HttpPost("Project")]
-        public async Task<IActionResult> AddProject2([FromQuery] AddProjectRequest request)
+        [HttpPut]
+        public async Task<IActionResult> UpdateProject(UpdateProjectRequest request)
         {
-            var addedProject = await _mediator.Send(new AddProjectCommand(request));
-            return Ok(addedProject);
+            var updateProject = await _mediator.Send(new UpdateProjectCommand(request));
+            return Ok(updateProject);
         }
-
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProject(DeleteProjectRequest request)
+        {
+            var deleteProject = await _mediator.Send(new DeleteProjectCommand(request));
+            return Ok(deleteProject);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProjectById(GetProjectByIdRequest request)
+        {
+            var project = await _mediator.Send(new GetProjectByIdQuery(request));
+            return Ok(project);
+        }
     }
 }

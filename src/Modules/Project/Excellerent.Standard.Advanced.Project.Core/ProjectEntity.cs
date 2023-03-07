@@ -11,23 +11,14 @@ namespace Excellerent.Standard.Advanced.Project.Core
     public class ProjectEntity:BaseAuditModel
     {
         [ForeignKey("Clients")]
-        public Guid ClientId {
-            get
-            {
-                return _clientId;
-            }
-            private set
-            {
-                ClientId = value;
-            }
-        }
+        public Guid ClientId { get; set; }
         public string Name
         {
             get
             {
                 return _name;
             }
-            private set
+            set
             {
                 _name = value;
             }
@@ -37,12 +28,12 @@ namespace Excellerent.Standard.Advanced.Project.Core
             {
                 return _description;
             }
-           private set
+            set
             {
                 _description = value;
             }
         }
-        private Guid _clientId;
+
         private string _name;
         private string _description;
     }

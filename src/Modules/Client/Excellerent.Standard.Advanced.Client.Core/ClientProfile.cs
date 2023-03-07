@@ -4,12 +4,11 @@ using Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient;
 
 namespace Excellerent.Standard.Advanced.Client.Core
 {
-    internal class ClientMappingProfile : Profile
+    internal class ClientProfile : Profile
     {
-        public ClientMappingProfile()
+        public ClientProfile()
         {
             CreateMap<Client, ClientEntity>();
-            CreateMap<AddClientRequest, Client>();
             CreateMap<AddClientRequest, Client>();
             CreateMap<UpdateClientRequest, Client>();
             CreateMap<ClientEntity, Client>();

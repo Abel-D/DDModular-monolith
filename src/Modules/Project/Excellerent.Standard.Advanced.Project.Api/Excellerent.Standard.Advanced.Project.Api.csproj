@@ -10,6 +10,7 @@
     <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Api\Excellerent.Standard.Advanced.Shared.Api.csproj" />
     <ProjectReference Include="..\..\..\Shared\Excellerent.Standard.Advanced.Shared.Application\Excellerent.Standard.Advanced.Shared.Application.csproj" />
     <ProjectReference Include="..\Excellerent.Standard.Advanced.Project.Core\Excellerent.Standard.Advanced.Project.Core.csproj" />
+    <ProjectReference Include="..\Excellerent.Standard.Advanced.Project.Infrastructure\Excellerent.Standard.Advanced.Project.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

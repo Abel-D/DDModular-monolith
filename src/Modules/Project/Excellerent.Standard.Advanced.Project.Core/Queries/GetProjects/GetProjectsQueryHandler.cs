@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
 {
-    internal class GetProjectsQueryHandler : IRequestHandler<GetProjectsQuery, Response<Shared.Application.Helpers.IEnumerable<Project>>>
+    public class GetProjectsQueryHandler : IRequestHandler<GetProjectsQuery, Response<PagedList<Project>>>
     {
         private readonly IProjectRepository _repository;
         private readonly IMapper _mapper;
@@ -17,17 +17,18 @@ namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
             _mapper = mapper;
 
         }
-        public async Task<Response<Shared.Application.Helpers.IEnumerable<Project>>> Handle(GetProjectsQuery request, CancellationToken cancellationToken)
+        public async Task<Response<PagedList<Project>>> Handle(GetProjectsQuery request, CancellationToken cancellationToken)
         {
-            var projects = await _repository.GetAllAsync(request.Request.PaginationParameters);
-            List<Project> result = new List<Project>();
+            var result = await _repository.GetAllAsync(request.Request.PaginationParameters);
+            List<Project> projects = new List<Project>();
 
-            foreach(var project in projects)
+            foreach(var res in result)
             {
-               result.Add(_mapper.Map<Project>(project));
+                Project project = _mapper.Map<Project>(res);
+                projects.Add(project);
             }
 
-            return Response<Shared.Application.Helpers.IEnumerable<Project>>.IsSuccessful((Shared.Application.Helpers.IEnumerable<Project>)result);
+            return Response<PagedList<Project>>.IsSuccessful(PagedList<Project>.ToPagedList(projects,request.Request.PaginationParameters.PageNumber,request.Request.PaginationParameters.PageSize));
         }
     }
 

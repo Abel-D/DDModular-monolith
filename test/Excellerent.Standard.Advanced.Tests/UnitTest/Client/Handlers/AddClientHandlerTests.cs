@@ -33,7 +33,10 @@ namespace Excellerent.Standard.Advanced.Tests.UnitTest.Client.Handlers
         public async void AddClientCommandHandler_Should_Add_Client()
         {
             //Arrange
-            var request = new AddClientRequest("Unit test ", "for test purpose");
+            var request = new AddClientRequest {
+                Name = "Unit test ",
+                Description = "for test purpose"
+                };
 
             var addClientCommand = new AddClientCommand(request);
 
@@ -47,7 +50,11 @@ namespace Excellerent.Standard.Advanced.Tests.UnitTest.Client.Handlers
         public async void AddClientCommandHandler_Should_Return_Correct_Type()
         {
             //Arrange
-            var request = new AddClientRequest("Unit test ", "for test purpose");
+            var request = new AddClientRequest
+            {
+                Name = "Unit test ",
+                Description = "for test purpose"
+            };
 
             var addClientCommand = new AddClientCommand(request);
 

@@ -31,7 +31,7 @@ namespace Excellerent.Standard.Advanced.Tests.UnitTest
                 }
             };
             var _mockRepository = new Mock<IClientRepository>();
-
+            PaginationParameters paginationParameters = new PaginationParameters();
             ClientEntity testClient = new ClientEntity();
 
             _mockRepository.Setup(r => r.Add(It.IsAny<ClientEntity>())).ReturnsAsync((ClientEntity client) =>
@@ -40,7 +40,7 @@ namespace Excellerent.Standard.Advanced.Tests.UnitTest
                 return testClient;
             });
 
-            _mockRepository.Setup(r => r.GetAllAsync(It.IsAny<PaginationParameters>()).Result).Returns(Clients);
+            _mockRepository.Setup(r => r.GetAllAsync(It.IsAny<PaginationParameters>()).Result).Returns(PagedList<Excellerent.Standard.Advanced.Client.Core.ClientEntity>.ToPagedList((IEnumerable<ClientEntity>)Clients, paginationParameters.PageNumber, paginationParameters.PageSize)); ;
 
             return _mockRepository;
 

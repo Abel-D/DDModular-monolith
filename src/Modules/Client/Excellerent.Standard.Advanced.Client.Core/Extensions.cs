@@ -7,8 +7,6 @@ namespace Excellerent.Standard.Advanced.Client.Core
     {
         public static IServiceCollection AddClientCoreServices(this IServiceCollection services)
         {
-
-            
             return services;
         }
     }

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Excellerent.Standard.Advanced.Project.Core.Queries.GetProjects
 {
-    public record GetProjectsQuery : IRequest<Response<Shared.Application.Helpers.IEnumerable<Project>>>
+    public record GetProjectsQuery : IRequest<Response<PagedList<Project>>>
     {
         public GetProjectsRequest Request { get; set; }
         public GetProjectsQuery(GetProjectsRequest request)

@@ -23,6 +23,11 @@ namespace Excellerent.Standard.Advanced.Client.Core.Commands.UpdateClient
                 Name = request.Request.Name,
                 Description = request.Request.Description
             };
+            var clientToUpdate = await _repository.GetById(client.Guid);
+            if(clientToUpdate == null)
+            {
+                return Response<Guid>.IsError(new Exception(client.Guid + "does not exist"));
+            }
             var result = await _repository.Update(_mapper.Map<ClientEntity>(client));
 
             return Response<Guid>.IsSuccessful(result.Guid);

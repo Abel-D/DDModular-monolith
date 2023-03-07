@@ -22,8 +22,13 @@ namespace Excellerent.Standard.Advanced.Project.Core.Commands.Add_Project
         }
         public async Task<Response<Guid>> Handle(AddProjectCommand request, CancellationToken cancellationToken)
         {
-            var project =_mapper.Map<Project>(request.Request);
-            var result = await _repository.Add(_mapper.Map<ProjectEntity>(project));
+            ProjectEntity project = new ProjectEntity
+            {
+                Name = request.Request.Name,
+                ClientId = request.Request.ClientId,
+                Description = request.Request.Description
+            };
+            var result = await _repository.Add(project);
 
             return Response<Guid>.IsSuccessful(result.Guid);
         }

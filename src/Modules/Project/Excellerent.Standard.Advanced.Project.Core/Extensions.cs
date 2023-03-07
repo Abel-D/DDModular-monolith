@@ -4,7 +4,7 @@ namespace Excellerent.Standard.Advanced.Project.Core
 {
     public static class Extensions
     {
-        public static IServiceCollection AddProjectCore(this IServiceCollection services)
+        public static IServiceCollection AddProjectCoreServices(this IServiceCollection services)
         {
             return services;
         }
