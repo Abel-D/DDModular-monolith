@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Modular.Client.Api\Excellerent.Modular.Client.Api.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Modular.Client.Core\Excellerent.Modular.Client.Core.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Modular.Client.Infrastructure\Excellerent.Modular.Client.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Modules\Client\Excellerent.Modular.Client.Shared\Excellerent.Modular.Client.Shared.csproj" />
+    <ProjectReference Include="..\..\Modules\Project\Excellerent.Modular.Project.Api\Excellerent.Modular.Project.Api.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Modular.Shared.Api\Excellerent.Modular.Shared.Api.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Modular.Shared.Application\Excellerent.Modular.Shared.Application.csproj" />
+    <ProjectReference Include="..\..\Shared\Excellerent.Modular.Shared.Infrastructure\Excellerent.Modular.Shared.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

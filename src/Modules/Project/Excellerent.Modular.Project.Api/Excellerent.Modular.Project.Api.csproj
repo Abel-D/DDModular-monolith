@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Modular.Shared.Api\Excellerent.Modular.Shared.Api.csproj" />
+    <ProjectReference Include="..\..\..\Shared\Excellerent.Modular.Shared.Application\Excellerent.Modular.Shared.Application.csproj" />
+    <ProjectReference Include="..\Excellerent.Modular.Project.Core\Excellerent.Modular.Project.Core.csproj" />
+    <ProjectReference Include="..\Excellerent.Modular.Project.Infrastructure\Excellerent.Modular.Project.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
